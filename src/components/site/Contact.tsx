@@ -213,9 +213,9 @@ function Field({
 }: {
   label: string;
   name: string;
-  error?: string;
+  error?: string | undefined;
   children: React.ReactNode;
-  full?: boolean;
+  full?: boolean | undefined;
 }) {
   return (
     <label className={cn("block text-sm", full && "sm:col-span-2")} htmlFor={name}>
